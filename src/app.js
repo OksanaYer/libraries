@@ -41,3 +41,14 @@ const myLocations = [
     description: 'The most famous wall in Berlin'
   }
 ];
+
+// Add markers to the map with a popup
+myLocations.forEach(location => {
+  Leaflet.marker(location.location, { icon: markerIcon })
+    .bindPopup(location.description)
+    .addTo(map);
+});
+
+// Set the view to the bounds of all markers
+const bounds = Leaflet.latLngBounds(myLocations.map(location => location.location));
+map.fitBounds(bounds);
