@@ -21,26 +21,32 @@ Leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const myLocations = [
   {
-    name: 'WBS CODING SCHOOL',
-    location: [52.457131, 13.54007],
-    description: 'The best coding school in the world'
+    name: 'Bergpark Wilhelmshöhe',
+    location: [51.3155, 9.3981],
+    description: 'UNESCO World Heritage park with Hercules monument and waterfalls'
   },
   {
-    name: 'Alexanderplatz',
-    location: [52.521918, 13.413215],
-    description: 'The most famous square in Berlin'
+    name: 'Hercules Monument',
+    location: [51.3275, 9.3947],
+    description: 'Iconic statue of Hercules overlooking Kassel'
   },
   {
-    name: 'Brandenburg Gate',
-    location: [52.516275, 13.377704],
-    description: 'The most famous gate in Berlin'
+    name: 'Orangerie in Karlsaue Park',
+    location: [51.3087, 9.5106],
+    description: 'Baroque orangery and museum in a large city park'
   },
   {
-    name: 'Berlin Wall',
-    location: [52.507541, 13.39032],
-    description: 'The most famous wall in Berlin'
+    name: 'GRIMMWELT Kassel',
+    location: [51.3097, 9.4887],
+    description: 'Museum dedicated to the Brothers Grimm and their fairy tales'
+  },
+  {
+    name: 'Kassel Hauptbahnhof',
+    location: [51.3214, 9.4976],
+    description: 'Main train station in Kassel'
   }
 ];
+
 
 // Add markers to the map with a popup
 myLocations.forEach(location => {
